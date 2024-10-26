@@ -33,3 +33,7 @@ data/runs/
 
 ##
 scripts/mount*
+
+.DS_Store
+
+sandbox

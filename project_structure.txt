@@ -1,0 +1,111 @@
+.
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── SUPPORT.md
+├── cafo
+│   ├── data
+│   │   ├── NAIPTileIndex.py
+│   │   ├── StreamingDatasets.py
+│   │   └── TileDatasets.py
+│   ├── models.py
+│   └── utils.py
+├── data
+│   ├── README.md
+│   ├── agcensus_data
+│   │   ├── README.md
+│   │   └── agcensus_2017_chickens.csv
+│   ├── chesapeake-bay-county-geoids.csv
+│   ├── delmarva_all_set_tiles.geojson
+│   ├── delmarva_testing_set_polygons.geojson
+│   ├── delmarva_testing_set_tiles.geojson
+│   ├── delmarva_training_set_polygons.geojson
+│   ├── delmarva_training_set_tiles.geojson
+│   ├── poultry_barn_change_predictions
+│   │   ├── README.md
+│   │   ├── poultry_barns-64-200_predictions.geojson
+│   │   ├── poultry_barns-64-200_predictions_2011.geojson
+│   │   ├── poultry_barns-64-200_predictions_2012.geojson
+│   │   ├── poultry_barns-64-200_predictions_2013.geojson
+│   │   ├── poultry_barns-64-200_predictions_2014.geojson
+│   │   ├── poultry_barns-64-200_predictions_2015.geojson
+│   │   ├── poultry_barns-64-200_predictions_2016.geojson
+│   │   ├── poultry_barns-64-200_predictions_2017.geojson
+│   │   └── poultry_barns-64-200_predictions_2018.geojson
+│   └── qualitative_eval_tile.csv
+├── environment.yml
+├── evaluate.py
+├── figures
+│   ├── USA_map.jpg
+│   ├── area_distribution.png
+│   ├── aspect_ratio_distribution.png
+│   ├── predictions_no-rotation_1.png
+│   ├── predictions_no-rotation_2.png
+│   ├── predictions_rotation_1.png
+│   ├── predictions_rotation_2.png
+│   └── rotation_distribution.png
+├── get_image_features_from_samples.py
+├── inference.py
+├── inference_and_evaluate.py
+├── inference_large.py
+├── models
+│   └── train-all_unet_0.5_0.01_rotation_best-checkpoint.pt
+├── notebooks
+│   ├── Data preparation - Generate Chesapeake Bay county GeoJSON.ipynb
+│   ├── Data preparation - Parse NAIP file list.ipynb
+│   ├── Data preparation - Prepare training and testing splits.ipynb
+│   ├── Figures - Correlation between our counts and AgCensus.ipynb
+│   ├── Figures - Geometric properties.ipynb
+│   ├── Figures - Histogram of angles.ipynb
+│   ├── Postprocessing - Attach dates to datasets.ipynb
+│   ├── Postprocessing - De-duplication.ipynb
+│   ├── Results - Calculate precision and recall on test set.ipynb
+│   ├── Results - Consolidate test set results.ipynb
+│   ├── Results and figures - Rotation experiment.ipynb
+│   ├── Statistic - Calculate size of NAIP on disk.ipynb
+│   └── Stats - Calculate size of different splits.ipynb
+├── postprocess.py
+├── project_structure.txt
+├── results
+│   ├── correlations_with_agcensus.csv
+│   ├── filtering_results_iou50.csv
+│   ├── summary_results.csv
+│   ├── train-all_unet_0.05_0.01.csv
+│   ├── train-all_unet_0.05_0.01_rotation.csv
+│   ├── train-all_unet_0.1_0.01.csv
+│   ├── train-all_unet_0.1_0.01_rotation.csv
+│   ├── train-all_unet_0.5_0.01.csv
+│   ├── train-all_unet_0.5_0.01_rotation.csv
+│   ├── train-augment_deeplabv3+_0.05_0.01_rotation.csv
+│   ├── train-augment_deeplabv3+_0.05_0.01_rotation.geojson
+│   ├── train-augment_manet_0.05_0.01_rotation.csv
+│   ├── train-augment_manet_0.05_0.01_rotation.geojson
+│   ├── train-augment_unet++_0.05_0.01_rotation.csv
+│   ├── train-augment_unet_0.05_0.01.csv
+│   ├── train-augment_unet_0.05_0.01_rotation.csv
+│   ├── train-augment_unet_0.1_0.01.csv
+│   ├── train-augment_unet_0.1_0.01_rotation.csv
+│   ├── train-augment_unet_0.5_0.01.csv
+│   ├── train-augment_unet_0.5_0.01_rotation.csv
+│   ├── train-single_unet_0.05_0.01.csv
+│   ├── train-single_unet_0.05_0.01_rotation.csv
+│   ├── train-single_unet_0.1_0.01.csv
+│   ├── train-single_unet_0.1_0.01_rotation.csv
+│   ├── train-single_unet_0.5_0.01.csv
+│   └── train-single_unet_0.5_0.01_rotation.csv
+├── run_ablations.sh
+├── sandbox
+│   └── fran.ipynb
+├── scripts
+│   ├── run_chesapeake-bay-3-18-2021_inference.py
+│   ├── run_chesapeake-bay-3-18-2021_postprocessing.sh
+│   ├── run_experiments.py
+│   ├── run_full-usa-3-13-2021_inference.py
+│   ├── run_full-usa-3-13-2021_postprocessing.py
+│   ├── run_test_inference.py
+│   ├── run_test_inference_and_evaluation.py
+│   └── run_test_postprocessing.py
+└── train.py
+
+12 directories, 97 files
